@@ -16,6 +16,12 @@ function update_orders_input()
 	$('#orders_input').val(orders);
 }
 
+function update_orders_input()
+{
+	var text = 'Cart (' + cart_get_number_of_items() +')';
+	$('#orders_button').val(text);
+}
+
 function cart_get_number_of_items()
 	{
 		var cnt = 0;
