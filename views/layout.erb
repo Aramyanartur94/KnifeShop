@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Sinatra + Twitter Bootstrap</title>
+		<title>KnifeShop</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<!-- Bootstrap -->
 		<link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -9,6 +9,7 @@
   	 	<script src="/vendor/jquery-1.9.1.min.js"></script>
     	<!-- Include all compiled plugins (below), or include individual files as needed -->
    		<script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+   		<script src="/app.js"></script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -35,6 +36,12 @@
 			      <li><a href="/blabla">Blabla</a></li>
 			      <li><a href="/something">Something</a></li>
 			      <li><a href="/contacts">Contacts</a></li>
+			    </ul>
+			     <ul class="nav navbar-nav navbar-right">
+			     	<form action="/cart" method="POST">
+			    	<li><input name="orders" class="form-control" type="text"></li>	
+			     	<li><input class="btn btn-success btn-lg" type="submit" value="Cart(...)"></li>
+			    	</form>
 			    </ul>
 			  </div><!--/.nav-collapse -->
 			</nav>
